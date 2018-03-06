@@ -4,7 +4,7 @@
 
 ## 基于Vue框架开发的webApp音乐播放器0.10版本
 
-demo查看地址: [demo地址:demo.itobys.com/vue-music](http://demo.itobys.com/vue-music)
+demo查看地址: [demo地址:music.itobys.com/](http://music.itobys.com/)
 
 ## 项目所用的命令
 
