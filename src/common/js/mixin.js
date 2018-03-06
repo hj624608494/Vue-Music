@@ -65,7 +65,7 @@ export const playerMixin = {
       // 改变播放下标 使得播放时切换播放列表时候下一首歌的下标不会混乱
       this.resetCurrentIndex(list)
       // 改变播放列表
-      this.setPlaylist(list)
+      this.setPlayList(list)
     },
     // 重置下标 保证切换选项时更新currentIndex
     resetCurrentIndex (list) {
