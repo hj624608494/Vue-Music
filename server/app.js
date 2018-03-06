@@ -1,5 +1,6 @@
 const express = require('express')
 const BodyParser = require('body-parser')
+const path = require('path')
 const app = express()
 const axios = require('axios')
 const Routes = express.Router()
@@ -66,6 +67,14 @@ Routes.post('/discSong', function (req, res) {
   }).catch((e) => {
     res.json({error: '请求错误'})
   })
+})
+
+// 静态文件绑定
+app.use(express.static(path.join(__dirname, '../dist')));
+
+// 所有请求都绑定到打包后的index
+app.get('*',function (req, res) {
+  res.sendFile(path.join(__dirname, '../dist/index.html'));
 })
 
 app.listen(8888, function () {
