@@ -2,26 +2,22 @@
 
 > vue-music
 
-## Build Setup
+## 基于Vue框架开发的webApp音乐播放器1.0版本
+
+## 项目所用的命令
 
 ``` bash
-# install dependencies
+# 拉取项目下来后请先执行以下命令
 npm install
 
-# serve with hot reload at localhost:8080
-npm run dev
+# 项目启动以下命令
+npm start
 
-# build for production with minification
+# 需要连同server一同启动 用命令行定位到server目录下执行以下命令（如安装nodemon可利用nodemon替换以下node）
+node app.js
+
+# 项目打包（打包后请放在server端，用node启动server端绑定到打包后的目录）
 npm run build
 
-# build for production and view the bundle analyzer report
-npm run build --report
 
-# run unit tests
-npm run unit
-
-# run all tests
-npm test
 ```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
