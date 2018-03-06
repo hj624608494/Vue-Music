@@ -2,7 +2,9 @@
 
 > vue-music
 
-## 基于Vue框架开发的webApp音乐播放器1.0版本
+## 基于Vue框架开发的webApp音乐播放器0.10版本
+
+demo查看地址: [demo观看](demo.itobys.com/vue-music)
 
 ## 项目所用的命令
 
