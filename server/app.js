@@ -1,13 +1,13 @@
-const express = require('express')
-const BodyParser = require('body-parser')
-const path = require('path')
-const app = express()
-const axios = require('axios')
-const Routes = express.Router()
+var express = require('express');
+var BodyParser = require('body-parser');
+var path = require('path');
+var app = express();
+var axios = require('axios');
+var Routes = express.Router();
 
 var cors = require('cors');
 
-app.use(BodyParser.json())
+app.use(BodyParser.json());
 
 app.use(cors({
   origin: ['http://localhost:8080'],
@@ -15,7 +15,7 @@ app.use(cors({
   alloweHeaders: ['Conten-Type', 'Authorization']
 }));
 
-app.use('/api', Routes)
+app.use('/api', Routes);
 
 // 歌词请求
 Routes.post('/lyric', function (req, res) {
@@ -71,7 +71,6 @@ Routes.post('/discSong', function (req, res) {
 
 // 静态文件绑定
 app.use(express.static(path.join(__dirname, '../dist')));
-
 // 所有请求都绑定到打包后的index
 app.get('*',function (req, res) {
   res.sendFile(path.join(__dirname, '../dist/index.html'));
